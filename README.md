@@ -1,11 +1,11 @@
 # LABWORK REPORT: EVALUATING ENSEMBLE LEARNING VIA CUSTOM RANDOM FOREST
 ## 1. Project Overview
-This project explores the empirical performance and generalization capabilities of two supervised learning algorithms: a single Baseline Decision Tree and a Custom Random Forest ensemble ($K = 100$). The primary objective is to analyze the effectiveness of Bootstrap Aggregation (Bagging) and Majority Voting in mitigating the inherent high-variance vulnerability of unpruned decision trees across two distinct data domains.
+This project explores the empirical performance and generalization capabilities of two supervised learning algorithms: a single Baseline Decision Tree and a Custom Random Forest ensemble (**$K = 100$**). The primary objective is to analyze the effectiveness of Bootstrap Aggregation (Bagging) and Majority Voting in mitigating the inherent high-variance vulnerability of unpruned decision trees across two distinct data domains.
 
 ## 2. Dataset Descriptions
 The project evaluates models on two contrasted datasets located in the `data/` directory:
-- Wisconsin Breast Cancer Dataset: Consists of highly distinct continuous geometric features used to classify tumors as Benign or Malignant.
-- Wine Quality Dataset: A more challenging dataset containing physiochemical properties of red wine. The target is binarized to evaluate wine quality scores (Good vs. Bad).
+- **Wisconsin Breast Cancer Dataset**: Consists of highly distinct continuous geometric features used to classify tumors as Benign or Malignant.
+- **Wine Quality Dataset**: A more challenging dataset containing physiochemical properties of red wine. The target is binarized to evaluate wine quality scores (Good vs. Bad).
 
 ## 3. Repository Structure
 The project is modularized into 5 core Python files and an automation script:
@@ -18,15 +18,15 @@ The project is modularized into 5 core Python files and an automation script:
 - `.gitignore`: Restricts data caches (`data/processed/`), compiled python scripts (`__pycache__/`), and local figures from being tracked by Git.
 
 ## 4. Installation & Prerequisites
-This project is developed on a Linux environment using Miniconda for package management.
-Required Packages:
+This project is developed on a Linux environment using **Miniconda** for package management.
+**Required Packages:**
 - Python 3.x
 - pandas
 - numpy
 - matplotlib
 - scikit-learn
 
-Setup Environment:
+**Setup Environment:**
 ```
 # Create and activate a new conda environment
 conda create -n ml_env python=3.10 -y
@@ -47,7 +47,7 @@ chmod +x run_pipeline.sh
 ```
 
 ## 6. Summary of Empirical Results
-Baseline Hyperparameters (Table 3.1):
+**Baseline Hyperparameters (Table 3.1):**
 - Criterion: "gini"
 - Max Depth: None (Unpruned)
 - Min Samples Split: 2
