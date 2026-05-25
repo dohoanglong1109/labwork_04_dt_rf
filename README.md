@@ -14,3 +14,21 @@ The project is modularized into 5 core Python files and an automation script:
 - `evaluate_models.py`: Executable script that trains both models, compares their training/testing classification errors, and outputs the final comparative summary.
 - `run_pipeline.sh`: A Bash automation script to execute the entire end-to-end machine learning pipeline with a single command.
 - `.gitignore`: Restricts data caches (`data/processed/`), compiled python scripts (`__pycache__/`), and local figures from being tracked by Git.
+## 4. Installation & Prerequisites
+This project is developed on a Linux environment using Miniconda for package management.
+Required Packages:
+- Python 3.x
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
+
+Setup Environment:
+```
+# Create and activate a new conda environment
+conda create -n ml_env python=3.10 -y
+conda activate ml_env
+
+# Install required packages
+conda install pandas numpy matplotlib scikit-learn -y
+```
